@@ -3,28 +3,37 @@ version: 2
 
 models:
     - name: sql_1
-      description: "A "
+      description: "address table "
       columns:
           - name: id
             description: "The primary key for this table"
             tests:
-                - unique
                 - not_null
 
     - name: sql_2
-      description: "A starter dbt model"
+      description: "Covid 19 data table"
       columns:
-          - name: id
+          - name: country_region
             description: "The primary key for this table"
             tests:
-                - unique
                 - not_null
 
     - name: final
-      description: "A starter dbt"
+      description: "Final table"
       columns:
-          - name: id
-            description: "The primary key for this table"
+          - name: city
+            description: "The key for this table"
             tests:
-                - unique
                 - not_null
+
+    - name: final_py
+      description: "python table"
+      columns:
+          - name: C_BIRTH_COUNTRY
+            description: "The key for this table"
+
+    - name: combine
+      description: "python table"
+      columns:
+          - name: C_BIRTH_COUNTRY
+            description: "The key for this table"
