@@ -1,39 +1,36 @@
-
 version: 2
 
 models:
-    - name: sql_1
-      description: "address table "
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - not_null
+  - name: sql_1
+    description: "address table "
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - not_null
 
-    - name: sql_2
-      description: "Covid 19 data table"
-      columns:
-          - name: country_region
-            description: "The primary key for this table"
-            tests:
-                - not_null
+  - name: sql_2
+    description: "Covid 19 data table"
+    columns:
+      - name: country_region
+        description: "The primary key for this table"
+        tests:
+          - not_null
 
-    - name: final
-      description: "Final table"
-      columns:
-          - name: city
-            description: "The key for this table"
-            tests:
-                - not_null
+  - name: final
+    description: "Final table"
+    columns:
+      - name: city
+        description: "The key for this table"
 
-    - name: final_py
-      description: "python table"
-      columns:
-          - name: C_BIRTH_COUNTRY
-            description: "The key for this table"
+  - name: final_py
+    description: "python table"
+    columns:
+      - name: C_BIRTH_COUNTRY
+        description: "The key for this table"
 
-    - name: combine
-      description: "python table"
-      columns:
-          - name: C_BIRTH_COUNTRY
-            description: "The key for this table"
+  - name: combine
+    description: "python table"
+    columns:
+      - name: C_BIRTH_COUNTRY
+        description: "The key for this table"

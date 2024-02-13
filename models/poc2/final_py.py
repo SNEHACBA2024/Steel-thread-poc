@@ -1,6 +1,5 @@
 import snowflake.snowpark.functions as F
 import datetime
-#import pyspark.sql.functions as Sf
 
 
 def model(dbt, session):

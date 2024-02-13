@@ -1,6 +1,7 @@
 {{ config(materialized="table" ) }}
 
-select count(*) as count, a.city as city
+
+select count(*) as count, {{ trim_macro( 'a.city' ) }} as city
 from {{ ref('sql_1') }} as a
 
 
