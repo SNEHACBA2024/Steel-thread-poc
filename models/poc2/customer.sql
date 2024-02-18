@@ -1,1 +1,1 @@
-select * from customer_temp
+select * from customer_temp where c_birth_country in  ( {{ percentage_macro('0','50') }} )
